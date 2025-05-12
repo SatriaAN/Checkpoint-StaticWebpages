@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 nav {
   font-family: poppins, sans-serif;
   display: flex;
@@ -11,7 +17,7 @@ nav {
   align-items: center;
   background-color: #232830;
   color: white;
-  padding: 1rem 0;
+  margin-top: 5rem;
 }
 
 nav h2 {
@@ -24,7 +30,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 1rem;
+  gap: 10px;
 }
 
 nav a {
@@ -72,13 +78,13 @@ hr {
   height: 3px;
   background-color: rgba(77, 77, 77, 0.125);
   margin: 0 -5rem;
-  width: calc(100% + 20rem);
+  width: calc(100% + 10rem);
   margin-bottom: 0.5rem;
 }
 
 body {
-  margin: 0 2.5rem;
-  padding: 0 2.5rem;
+  /* margin: 0 2.5rem;
+  padding: 0 2.5rem; */
   background-color: #232830;
 }
 
@@ -133,26 +139,61 @@ body {
   display: inline-block;
 }
 
-/* .category li:last-child a {
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(144, 144, 144, 1) 0%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
 
-.cube {
-  height: 35px;
-  width: 70px;
-  background: linear-gradient(
-    to left,
-    rgba(35, 40, 48, 1),
-    rgba(35, 40, 48, 0)
-  );
-  position: absolute;
-  /* z-index: 1; */
-  right: 55px;
-  top: 10px;
+.card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  width: 320px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.card-content {
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-content h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.card-content p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 1.2rem;
+}
+
+.card-footer {
+  font-size: 12px;
+  /* color: #666666; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
