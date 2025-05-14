@@ -1,3 +1,46 @@
+@media (max-width: 1024px) {
+  .category a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #909090;
+  }
+
+  .card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .category a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 25px;
+    color: #909090;
+  }
+  .card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    width: 310px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +118,7 @@ nav a {
 
 hr.full-width {
   position: relative;
-  left: 49%;
+  left: 50%;
   transform: translateX(-50%);
   width: 100vw;
   height: 3px;
@@ -94,7 +137,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   position: relative;
 }
 
@@ -117,14 +160,14 @@ body {
   text-decoration: none;
 }
 
-.category a {
+/* .category a {
   text-decoration: none;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 20px;
   color: #909090;
-}
+} */
 
 .explainer-gradient {
   background: linear-gradient(
@@ -141,7 +184,7 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(297px, 1fr));
   gap: 2rem;
   margin: 3rem 0;
 }
@@ -161,16 +204,16 @@ body {
   transform: translateY(-5px);
 }
 
-.card img {
+/* .card img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 25px auto;
-  width: 320px;
+  width: 250px;
   height: 160px;
   object-fit: cover;
   border-radius: 22px;
-}
+} */
 
 .card-content {
   display: flex;
